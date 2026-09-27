@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ILQ2OX_konferencia>
+    <konferencia>
+        <cím id="cyber">AI in Cyber Security</cím>
+        <helyszín>Los Angeles</helyszín>
+        <dátum>2027.01.05</dátum>
+        <előadó>
+            <név>Dr. Nicolaus Hans</név>
+            <adószám>DE123456789</adószám>
+            <lakcím>Friedrichstraße 47, 10117 Berlin</lakcím>
+        </előadó>
+        <hallgatók>
+            <hallgató id="H001">
+                <név>Kovács Péter</név>
+                <lakcím>Kossuth Lajos utca 12., 1053 Budapest</lakcím>
+            </hallgató>
+            <hallgató id="H002">
+                <név>Szabó Anna</név>
+                <lakcím>Petőfi Sándor utca 3., 4024 Debrecen</lakcím>
+            </hallgató>
+        </hallgatók>
+    </konferencia>
+    <konferencia>
+        <cím id="kvantum">Kvantumszámítástechnika az iparban</cím>
+        <helyszín>Budapest</helyszín>
+        <dátum>2027.03.18</dátum>
+        <előadó>
+            <név>Dr. Horváth Gábor</név>
+            <adószám>HU987654321</adószám>
+            <lakcím>Andrássy út 22., 1061 Budapest</lakcím>
+        </előadó>
+        <hallgatók>
+            <hallgató id="H003">
+                <név>Nagy Eszter</név>
+                <lakcím>Rákóczi út 7., 3525 Miskolc</lakcím>
+            </hallgató>
+            <hallgató id="H004">
+                <név>Tóth Márton</név>
+                <lakcím>Fő utca 45., 9021 Győr</lakcím>
+            </hallgató>
+        </hallgatók>
+    </konferencia>
+</ILQ2OX_konferencia>

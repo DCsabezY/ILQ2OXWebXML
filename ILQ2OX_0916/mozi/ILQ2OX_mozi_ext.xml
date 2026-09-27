@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mozi>
+    <film id="txn_xm_2jb" mufaj="horror">
+        <rendezo id ="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5g_4xm_2jb" nev="Madison_Ivy"/>
+        <szinesz id="a">
+            <gyerekszinesz />
+            <musicalszinesz />
+            <szinkronszinesz />
+        </szinesz>
+        <iro id="trv_4xm_2jb" />
+    </film>
+    <film id="tbc_xm_5bj" mufaj="thriller">
+        <rendező id="bbo_xm_5bj">
+            <nev id="ada_xm_5bj" nev="Lajos" />
+            <kor ertek="50"/>
+        </rendező>
+        <iro>
+            <nev id="jkl_xm_5bj" nev="Sandor" />
+            <kor ertek="35"/>
+        </iro>
+    </film>
+</mozi> 

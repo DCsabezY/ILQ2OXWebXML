@@ -1,0 +1,42 @@
+body,div,table,thead,tbody,tfoot,tr,td,p 
+{ 
+    font-family:"Liberation Sans";
+    font-size:x-small 
+}
+
+a.comment-indicator:hover + comment 
+{ 
+    background:#ffd; 
+    position:absolute;
+    display:block;
+    border:1px solid black;
+    padding:0.5em;
+} 
+
+a.comment-indicator
+{ background:red;
+    display:inline-block; 
+    order:1px solid black; 
+    width:0.5em;
+    height:0.5em;
+} 
+
+comment
+{
+    display:none;
+} 
+
+th
+{
+    font-family:"Liberation Sans";
+    font-size:x-small ;
+    background-color: rgb(214, 117, 117);
+    color:#000000;
+    border: 1px solid black;
+    padding: 0.5
+}
+
+tr:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
