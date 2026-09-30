@@ -3,8 +3,23 @@
 <!ELEMENT ILQ2OX_kurzusfelvetel (hallgato, kurzusok)>
 
     <!ATTLIST ILQ2OX_kurzusfelvetel
-        tanev CDATA #REQUIRED
+        tanév CDATA #REQUIRED
         egyetem CDATA #FIXED "ME">
     
     <!ELEMENT hallgato (hnev,szulev,szak)>
     <!ATTLIST hallgato id ID #REQUIRED>
+
+        <!ELEMENT hnev (#PCDATA)>
+        <!ELEMENT szulev (#PCDATA)>
+        <!ELEMENT szak (#PCDATA)>
+            <!ATTLIST szak evf CDATA #REQUIRED>
+    
+    <!ELEMENT kurzusok (kurzus+)>
+        <!ELEMENT kurzus (kurzusnev, kredit, hely, idopont, oktato)>
+            <!ATTLIST kurzus id ID #REQUIRED>
+
+            <!ELEMENT kurzusnev (#PCDATA)>
+            <!ELEMENT kredit (#PCDATA)>
+            <!ELEMENT hely (#PCDATA)>
+            <!ELEMENT idopont (#PCDATA)>
+            <!ELEMENT oktato (#PCDATA)>

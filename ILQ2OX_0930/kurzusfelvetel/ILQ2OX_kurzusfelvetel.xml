@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<!DOCTYPE ILQ2OX_kurzusfelvetel PUBLIC "ILQ2OX_kurzusfelvetel" "ILQ2OX_kurzusfelvetel.dtd">
 
 <ILQ2OX_kurzusfelvetel tanév = "2026/27 I." egyetem ="ME"> 
     <hallgato id="ILQ2OX">
@@ -9,7 +9,7 @@
         <szak evf = "2024">Mérnökinformatikus</szak>
     </hallgato>
 
-    <kurzosok>
+    <kurzusok>
         <kurzus id="GEIAL332-B">
             <kurzusnev>Webes Adatkezelő Környezetek</kurzusnev>
             <kredit>5</kredit>
@@ -38,26 +38,33 @@
             <idopont>Csütörtök 16:00-19:30</idopont>
             <oktato>Dr. Nehéz Károly Róbert</oktato>
         </kurzus>
-        <kurzus id="MEIOKMUSZAN1">
-            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
-            <kredit>0</kredit>
-            <hely>/A/1 201</hely>
-            <idopont>Hétfő</idopont>
-            <oktato>Nagyné Varga Orsolya</oktato>
+        <kurzus id="GEIAK130-B2">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>/A/1 mf</hely>
+            <idopont>kedd 8:00-12:00</idopont>
+            <oktato>Kunné Dr. Tamás Judit</oktato>
         </kurzus>
-        <kurzus id="MEIOKMUSZAN1">
-            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
-            <kredit>0</kredit>
-            <hely>/A/1 201</hely>
-            <idopont>Hétfő</idopont>
-            <oktato>Nagyné Varga Orsolya</oktato>
+        <kurzus id="GEIAL335-B2">
+            <kurzusnev>Mobil programozási alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>/A/1 5</hely>
+            <idopont>Hétfő 16:00-20:00</idopont>
+            <oktato>Dr. Agárdi Anita</oktato>
         </kurzus>
-        <kurzus id="MEIOKMUSZAN1">
-            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
-            <kredit>0</kredit>
+        <kurzus id="GEIAL331-B2">
+            <kurzusnev>Web technológiák 1.</kurzusnev>
+            <kredit>5</kredit>
             <hely>/A/1 201</hely>
-            <idopont>Hétfő</idopont>
-            <oktato>Nagyné Varga Orsolya</oktato>
+            <idopont>Hétfő 10:00-12:00</idopont>
+            <oktato>Dr. Agárdi Anita</oktato>
         </kurzus>
-    </kurzosok>
+        <kurzus id="GEIAL30A-B2">
+            <kurzusnev>Windows rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>/Inf/103</hely>
+            <idopont>Kedd 16:00-20:00</idopont>
+            <oktato>Dr. Wagner György</oktato>
+        </kurzus>
+    </kurzusok>
 </ILQ2OX_kurzusfelvetel>
