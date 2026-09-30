@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT ILQ2OX_kurzusfelvetel (hallgato, kurzusok)>
+
+    <!ATTLIST ILQ2OX_kurzusfelvetel
+        tanev CDATA #REQUIRED
+        egyetem CDATA #FIXED "ME">
+    
+    <!ELEMENT hallgato (hnev,szulev,szak)>
+    <!ATTLIST hallgato id ID #REQUIRED>

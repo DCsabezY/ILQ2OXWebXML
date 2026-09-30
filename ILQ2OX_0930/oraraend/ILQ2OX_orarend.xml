@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ILQ2OX_orarend PUBLIC "ILQO2X_orarend" "ILQO2X_orarend.dtd">
+
+<ILQ2OX_orarend>
+    <Ora id="ora01" típus="elmelet">
+        <targy>Elektronika és elektrotechnika</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8.00</tol>
+            <ig>9.30</ig>
+        </idopont>
+        <helyszin>3-as előadó</helyszin>
+        <oktato>Szabó Norbert István</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora02" típus="elmelet">
+        <targy>Web technológiák 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>10.00</tol>
+            <ig>11.30</ig>
+        </idopont>
+        <helyszin>5-ös előadó</helyszin>
+        <oktato>Dr. Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora03" típus="szeminarium">
+        <targy>Angol műszaki szaknyelv 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>12.00</tol>
+            <ig>13.30</ig>
+        </idopont>
+        <helyszin>A1/314</helyszin>
+        <oktato>Nagyné Varga Orsolya</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora04" típus="gyakorlat">
+        <targy>Web technológiák 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14.00</tol>
+            <ig>15.30</ig>
+        </idopont>
+        <helyszin>ln/101</helyszin>
+        <oktato>Dr. Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora05" típus="elmelet">
+        <targy>Mobil Programozás</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>16.00</tol>
+            <ig>17.30</ig>
+        </idopont>
+        <helyszin>ln/101</helyszin>
+        <oktato>Dr. Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora06" típus="gyakorlat">
+        <targy>Mobil Programozás</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>18.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>ln/101</helyszin>
+        <oktato>Dr. Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora07" típus="gyakorlat">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>8.00</tol>
+            <ig>9.30</ig>
+        </idopont>
+        <helyszin>32es előadó</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora08" típus="elmelet">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10.00</tol>
+            <ig>11.30</ig>
+        </idopont>
+        <helyszin>32es előadó</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora09" típus="elmelet">
+        <targy>Windows Rendszergazda</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>16.00</tol>
+            <ig>17.30</ig>
+        </idopont>
+        <helyszin>ln/103</helyszin>
+        <oktato>Huszák Péter</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora10" típus="gyakorlat">
+        <targy>Mesterséges intelligencia alapok</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>18.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>ln/103</helyszin>
+        <oktato>Huszák Péter</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora11" típus="elmelet">
+        <targy>Webes adatkezelő környezetek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>8.00</tol>
+            <ig>9.30</ig>
+        </idopont>
+        <helyszin>ln/202</helyszin>
+        <oktato>Prof. Dr. Kovács László</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora12" típus="gyakorlat">
+        <targy>Webes adatkezelő környezetek</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12.00</tol>
+            <ig>13.30</ig>
+        </idopont>
+        <helyszin>ln/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora13" típus="gyakorlat">
+        <targy>Elektronika és elektrotechnika</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>12.00</tol>
+            <ig>13.30</ig>
+        </idopont>
+        <helyszin>A1/320</helyszin>
+        <oktato>Szabó Norbert István</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora14" típus="elmelet">
+        <targy>Játék Prototípus</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>16.00</tol>
+            <ig>17.30</ig>
+        </idopont>
+        <helyszin>ln/15</helyszin>
+        <oktato>Kiss Áron</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    <Ora id="ora15" típus="gyakorlat">
+        <targy>Játék Prototípus</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>18.00</tol>
+            <ig>19.30</ig>
+        </idopont>
+        <helyszin>ln/15</helyszin>
+        <oktato>Kiss Áron</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </Ora>
+    
+</ILQ2OX_orarend>

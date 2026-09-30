@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT ILQ2OX_orarend (Ora)+>
+
+    <!ELEMENT Ora (targy,idopont,helyszin,oktato,szak)>
+
+        <!ATTLIST Ora id ID #REQUIRED>
+        <!ATTLIST Ora típus (elmelet | gyakorlat | szeminarium) "elmelet">
+
+        <!ELEMENT targy (#PCDATA)>
+        <!ELEMENT idopont (nap, tol, ig)>
+            <!ELEMENT nap (#PCDATA)>
+            <!ELEMENT tol (#PCDATA)>
+            <!ELEMENT ig (#PCDATA)>
+        <!ELEMENT helyszin (#PCDATA)>
+        <!ELEMENT oktato (#PCDATA)>
+        <!ELEMENT szak (#PCDATA)>

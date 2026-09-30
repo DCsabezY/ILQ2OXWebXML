@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<ILQ2OX_kurzusfelvetel tanév = "2026/27 I." egyetem ="ME"> 
+    <hallgato id="ILQ2OX">
+        <hnev>Deák Csaba</hnev>
+        <szulev>2004-11-15</szulev>
+        <szak evf = "2024">Mérnökinformatikus</szak>
+    </hallgato>
+
+    <kurzosok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Webes Adatkezelő Környezetek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/101</hely>
+            <idopont>Szerda 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+        <kurzus id="MEIOKMUSZAN1">
+            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>/A/1 201</hely>
+            <idopont>Hétfő 12:00-13:30</idopont>
+            <oktato>Nagyné Varga Orsolya</oktato>
+        </kurzus>
+        <kurzus id="GEVEE050-B2">
+            <kurzusnev>Elektrotechnika-elektronika</kurzusnev>
+            <kredit>5</kredit>
+            <hely>/A/1 316</hely>
+            <idopont>Csütörtök 12:00-13:30</idopont>
+            <oktato>Szabó Norbert István</oktato>
+        </kurzus>
+        <kurzus id="GEIAK310-B2">
+            <kurzusnev>Játék prototípusok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>/Inf/10</hely>
+            <idopont>Csütörtök 16:00-19:30</idopont>
+            <oktato>Dr. Nehéz Károly Róbert</oktato>
+        </kurzus>
+        <kurzus id="MEIOKMUSZAN1">
+            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>/A/1 201</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Nagyné Varga Orsolya</oktato>
+        </kurzus>
+        <kurzus id="MEIOKMUSZAN1">
+            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>/A/1 201</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Nagyné Varga Orsolya</oktato>
+        </kurzus>
+        <kurzus id="MEIOKMUSZAN1">
+            <kurzusnev>Angol műszaki szaknyelv 1.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>/A/1 201</hely>
+            <idopont>Hétfő</idopont>
+            <oktato>Nagyné Varga Orsolya</oktato>
+        </kurzus>
+    </kurzosok>
+</ILQ2OX_kurzusfelvetel>
