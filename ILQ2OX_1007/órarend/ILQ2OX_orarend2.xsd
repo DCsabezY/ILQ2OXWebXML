@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="ILQ2OX_orarend">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ora" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="targy" type="xs:string"/>
+                            <xs:element name="idopont">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nap">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Hétfő"/>
+                                                    <xs:enumeration value="kedd"/>
+                                                    <xs:enumeration value="szerda"/>
+                                                    <xs:enumeration value="csütörtök"/>
+                                                    <xs:enumeration value="péntek"/>
+                                                    <xs:enumeration value="szombat"/>
+                                                    <xs:enumeration value="vasárnap"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="tol" type="oraTipus"/>
+                                        <xs:element name="ig" type="oraTipus"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="helyszin" type="xs:string"/>
+                            <xs:element name="oktato" type="xs:string"/>
+                            <xs:element name="szak" type="xs:string"/>
+                        </xs:sequence>
+
+                        <xs:attribute name="id" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{2}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                        <xs:attribute name="típus" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="elmelet"/>
+                                    <xs:enumeration value="gyakorlat"/>
+                                    <xs:enumeration value="szeminarium"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="oraTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]|1[0-9]|2[0-3])\.[0-5][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
