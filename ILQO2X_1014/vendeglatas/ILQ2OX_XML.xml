@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<ILQ2OX_vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ILQ2OX_XMLSchema.xsd">
+    <!-- Étterem -->
+    <etterem ekod="e1">
+    <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegrádi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </etterem>
+    <etterem ekod="e2">
+        <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegrádi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </etterem>
+
+    <!-- Főszakács -->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Havas Péter</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Institute Paul Bocuse</vegzettseg>
+    </foszakacs>
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Ngay Károly</nev>
+        <eletkor>30</eletkor>
+        <vegzettseg>Le Cordon Bleu</vegzettseg>
+    </foszakacs>
+
+    <!-- Szakács -->
+    <szakacs szkod="sz1" e_sz="e1">
+        <nev>Molnár Ákos</nev>
+        <reszleg>Alapanyag készítés</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Institue Paul Bocuse</vegzettseg>
+    </szakacs>
+    <szakacs szkod="sz2" e_sz="e2">
+        <nev>Dobos László</nev>
+        <reszleg>Cukrász</reszleg>
+        <vegzettseg>Öntanítás</vegzettseg>
+    </szakacs>
+    <szakacs szkod="sz3" e_sz="e2">
+        <nev>Tálas Levent</nev>
+        <reszleg>Gardemanger</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+    </szakacs>
+    <szakacs szkod="sz4" e_sz="e1">
+        <nev>Szűcs Judit</nev>
+        <reszleg>Entremetier</reszleg>
+        <vegzettseg>Le Cordon Bleu</vegzettseg>
+        <vegzettseg>Institue Paul Bocuse</vegzettseg>
+    </szakacs>
+
+    <!-- Gyakornok -->
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Bordás Dávid</nev>
+        <gyakorlat>
+            <kezdete>2023.08.20.</kezdete>
+            <idotartama>2 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+        <muszak>Este</muszak>
+    </gyakornok>
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Szilágyi István</nev>
+        <gyakorlat>
+            <kezdete>2023.06.01.</kezdete>
+            <idotartama>4 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Délután</muszak>
+    </gyakornok>
+    <gyakornok gykod="gy3" e_gy="e1">
+        <nev>Szentpétery Ferenc</nev>
+        <gyakorlat>
+            <kezdete>2023.01.01.</kezdete>
+            <idotartama>10 hónap</idotartama>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+        <muszak>Délután</muszak>
+    </gyakornok>
+
+    <!-- Vendeg -->
+    <vendeg vkod="v1">
+        <nev>Fekete Péter</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Márton</utca>
+            <hazszam>17</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v2">
+        <nev>Bordás Áron</nev>
+        <eletkor>25</eletkor>
+        <cim>
+            <varos>Eger</varos>
+            <utca>Dobó</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </vendeg>
+    <vendeg vkod="v3">
+        <nev>Lakatos Alex</nev>
+        <eletkor>28</eletkor>
+        <cim>
+            <varos>Mezőkövesd</varos>
+            <utca>Fecske</utca>
+            <hazszam>10</hazszam>
+        </cim>
+    </vendeg>
+
+    <!-- Rendelés -->
+    <rendeles e_v_v="v1" e_v_e="e1">
+        <osszeg>9000</osszeg>
+        <etel>steak</etel>
+    </rendeles>
+    <rendeles e_v_v="v2" e_v_e="e2">
+        <osszeg>8000</osszeg>
+        <etel>kaviár</etel>
+    </rendeles>
+    <rendeles e_v_v="v3" e_v_e="e1">
+        <osszeg>20000</osszeg>
+        <etel>Zsíros kenyér</etel>
+    </rendeles>
+    <rendeles e_v_v="v3" e_v_e="e2">
+        <osszeg>300</osszeg>
+        <etel>Mackó sajt</etel>
+    </rendeles>
+
+</ILQ2OX_vendeglatas>
