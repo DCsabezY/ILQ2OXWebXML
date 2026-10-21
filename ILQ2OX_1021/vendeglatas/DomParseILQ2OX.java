@@ -1,4 +1,4 @@
-package ILQ2OX_1021;
+package ILQ2OX_1021.vendeglatas;
 import java.io.File;
 import java.io.IOException;
 
@@ -16,7 +16,7 @@ public class DomParseILQ2OX {
     public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException {
         
         //Ebből a fájlból olvas
-        File xmlFile = new File("ILQ2OX_1021/ILQ2OX_XML.xml"); 
+        File xmlFile = new File("vendeglatas/ILQ2OX_XML.xml"); 
 
         //DocumentBuilderFactoryból megkapjuk a DocumentBuilder-t
         DocumentBuilderFactory Factory = DocumentBuilderFactory.newInstance();

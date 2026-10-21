@@ -20,7 +20,7 @@
             <utca>Visegrádi</utca>
             <hazszam>13</hazszam>
         </cim>
-        <csillag>4</csillag>
+        <csillag>5</csillag>
     </etterem>
 
     <!-- Főszakács -->
@@ -49,7 +49,7 @@
         <vegzettseg>Öntanítás</vegzettseg>
     </szakacs>
     <szakacs szkod="sz3" e_sz="e2">
-        <nev>Tálas Levent</nev>
+        <nev>Tálas Levente</nev>
         <reszleg>Gardemanger</reszleg>
         <vegzettseg>Szakközépiskola</vegzettseg>
     </szakacs>
