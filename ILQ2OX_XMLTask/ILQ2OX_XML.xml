@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Gyökérelem -->
+<ILQ2OX_gabonatelep>
+    <!-- Mérlegjegyek -->
+    <Merlegjegy>
+        <J_rendszam></J_rendszam>
+        <Brutto_kg></Brutto_kg>
+        <Ures_kg></Ures_kg>
+        <Netto_kg></Netto_kg>
+        <Irany></Irany>
+        <datum></datum>
+    </Merlegjegy>
+
+    <!-- Gazdák -->
+    <Gazda>
+        <Adoszam></Adoszam>
+        <Nev></Nev>
+        <Lakcim></Lakcim>
+        <Emailcim></Emailcim>
+        <Elerhetoseg>
+            <Telefonszam></Telefonszam>
+            <Faxszam></Faxszam>
+        </Elerhetoseg>
+    </Gazda>
+
+    <!-- Vevők -->
+    <Vevo>
+        <Nev></Nev>
+        <Emailcim></Emailcim>
+        <Telefonszam></Telefonszam>
+        <Szallitasicim></Szallitasicim>
+    </Vevo>
+
+    <!-- Raktárak -->
+    <Raktar>
+        <Nev></Nev>
+        <Cim></Cim>
+        <Kapacitas_tonna></Kapacitas_tonna>
+    </Raktar>
+
+    <!-- Készlet mozgás -->
+    <Keszletmozgas>
+        <Irany></Irany>
+        <Datum></Datum>
+        <Mennyiseg></Mennyiseg>
+    </Keszletmozgas>
+</ILQ2OX_gabonatelep>

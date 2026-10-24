@@ -5,7 +5,7 @@
 <ILQ2OX_vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ILQ2OX_XMLSchema.xsd">
     <!-- Étterem -->
     <etterem ekod="e1">
-    <nev>Trófea</nev>
+        <nev>Trófea</nev>
         <cim>
             <varos>Budapest</varos>
             <utca>Visegrádi</utca>
