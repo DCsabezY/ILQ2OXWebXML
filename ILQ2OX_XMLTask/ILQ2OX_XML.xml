@@ -1,48 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Gyökérelem -->
-<ILQ2OX_gabonatelep>
+<ILQ2OX_gabonatelep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ILQ2OX_XMLSchema.xsd">
+
     <!-- Mérlegjegyek -->
-    <Merlegjegy>
-        <J_rendszam></J_rendszam>
-        <Brutto_kg></Brutto_kg>
-        <Ures_kg></Ures_kg>
-        <Netto_kg></Netto_kg>
-        <Irany></Irany>
-        <datum></datum>
+    <Merlegjegy Merlegjegy_ID="mj_01" Termeny_ID="t_01" Vevo_ID="v_01" Gazda_ID="g_01">
+        <J_rendszam>ABC-123</J_rendszam>
+        <Brutto_mazsa>420</Brutto_mazsa>
+        <Ures_mazsa>150</Ures_mazsa>
+        <Netto_mazsa>270</Netto_mazsa>
+        <Irany>Be</Irany>
+        <Datum>2026-07-12</Datum>
+    </Merlegjegy>
+    <Merlegjegy Merlegjegy_ID="mj_02" Termeny_ID="t_02" Vevo_ID="v_02" Gazda_ID="g_02">
+        <J_rendszam>DEF-456</J_rendszam>
+        <Brutto_mazsa>385</Brutto_mazsa>
+        <Ures_mazsa>140</Ures_mazsa>
+        <Netto_mazsa>245</Netto_mazsa>
+        <Irany>Be</Irany>
+        <Datum>2026-07-15</Datum>
+    </Merlegjegy>
+    <Merlegjegy Merlegjegy_ID="mj_03" Termeny_ID="t_01" Vevo_ID="v_02" Gazda_ID="g_01">
+        <J_rendszam>GHI-789</J_rendszam>
+        <Brutto_mazsa>450</Brutto_mazsa>
+        <Ures_mazsa>160</Ures_mazsa>
+        <Netto_mazsa>290</Netto_mazsa>
+        <Irany>Ki</Irany>
+        <Datum>2026-08-02</Datum>
     </Merlegjegy>
 
     <!-- Gazdák -->
-    <Gazda>
-        <Adoszam></Adoszam>
-        <Nev></Nev>
-        <Lakcim></Lakcim>
-        <Emailcim></Emailcim>
+    <Gazda Gazda_ID="g_01">
+        <Adoszam>12345678-2-05</Adoszam>
+        <Nev>Kovács János</Nev>
+        <Lakcim>5600 Békéscsaba, Fő utca 12.</Lakcim>
         <Elerhetoseg>
-            <Telefonszam></Telefonszam>
-            <Faxszam></Faxszam>
+            <TelefonSzam>+36 30 111 2233</TelefonSzam>
+            <FaxSzam>+36 66 123 456</FaxSzam>
+            <EmailCim>janos.kovacs@gazdasag.hu</EmailCim>
+        </Elerhetoseg>
+    </Gazda>
+    <Gazda Gazda_ID="g_02">
+        <Adoszam>87654321-1-04</Adoszam>
+        <Nev>Szabó Péter</Nev>
+        <Lakcim>5700 Gyula, Kossuth tér 3.</Lakcim>
+        <Elerhetoseg>
+            <TelefonSzam>+36 20 444 5566</TelefonSzam>
+            <FaxSzam>+36 66 654 321</FaxSzam>
+            <EmailCim>szabo.peter@gmail.com</EmailCim>
+            <EmailCim>peter.szabo@agrar.hu</EmailCim>
         </Elerhetoseg>
     </Gazda>
 
     <!-- Vevők -->
-    <Vevo>
-        <Nev></Nev>
-        <Emailcim></Emailcim>
-        <Telefonszam></Telefonszam>
-        <Szallitasicim></Szallitasicim>
+    <Vevo Vevo_ID="v_01">
+        <Nev>Alföldi Malom Zrt.</Nev>
+        <Elerhetoseg>
+            <TelefonSzam>+36 62 555 100</TelefonSzam>
+            <FaxSzam>+36 62 555 101</FaxSzam>
+            <!-- Többértékű tulajdonság -->
+            <EmailCim>info@alfoldimalom.hu</EmailCim>
+            <EmailCim>beszerzes@alfoldimalom.hu</EmailCim>
+        </Elerhetoseg>
+        <SzallitasiCim>6720 Szeged, Malom utca 1.</SzallitasiCim>
+    </Vevo>
+    <Vevo Vevo_ID="v_02">
+        <Nev>Dél-Tiszai Takarmány Kft.</Nev>
+        <Elerhetoseg>
+            <TelefonSzam>+36 66 777 200</TelefonSzam>
+            <FaxSzam>+36 66 777 201</FaxSzam>
+            <EmailCim>iroda@deltiszai.hu</EmailCim>
+        </Elerhetoseg>
+        <SzallitasiCim>5600 Békéscsaba, Ipari út 8.</SzallitasiCim>
     </Vevo>
 
     <!-- Raktárak -->
-    <Raktar>
-        <Nev></Nev>
-        <Cim></Cim>
-        <Kapacitas_tonna></Kapacitas_tonna>
+    <Raktar Raktar_ID="r_01">
+        <Nev>Központi siló</Nev>
+        <Cim>5600 Békéscsaba, Telep út 1.</Cim>
+        <Kapacitas_mazsa>5000</Kapacitas_mazsa>
+    </Raktar>
+    <Raktar Raktar_ID="r_02">
+        <Nev>Északi tároló</Nev>
+        <Cim>5600 Békéscsaba, Telep út 5.</Cim>
+        <Kapacitas_mazsa>2500</Kapacitas_mazsa>
     </Raktar>
 
-    <!-- Készlet mozgás -->
-    <Keszletmozgas>
-        <Irany></Irany>
-        <Datum></Datum>
-        <Mennyiseg></Mennyiseg>
-    </Keszletmozgas>
+    <!-- Készletmozgások -->
+    <KeszletMozgas Mozgas_ID="km_01" Raktar_ID="r_01" Merlegjegy_ID="mj_01" Termeny_ID="t_01">
+        <Irany>Be</Irany>
+        <Datum>2026-07-12</Datum>
+        <Mennyiseg_mazsa>270</Mennyiseg_mazsa>
+    </KeszletMozgas>
+    <KeszletMozgas Mozgas_ID="km_02" Raktar_ID="r_02" Merlegjegy_ID="mj_02" Termeny_ID="t_02">
+        <Irany>Be</Irany>
+        <Datum>2026-07-15</Datum>
+        <Mennyiseg_mazsa>245</Mennyiseg_mazsa>
+    </KeszletMozgas>
+    <KeszletMozgas Mozgas_ID="km_03" Raktar_ID="r_01" Merlegjegy_ID="mj_03" Termeny_ID="t_01">
+        <Irany>Ki</Irany>
+        <Datum>2026-08-02</Datum>
+        <Mennyiseg_mazsa>290</Mennyiseg_mazsa>
+    </KeszletMozgas>
+
+    <!-- Termények -->
+    <Termeny Termeny_ID="t_01">
+        <Nev>Búza</Nev>
+        <Fajta>Mv Nádor</Fajta>
+    </Termeny>
+    <Termeny Termeny_ID="t_02">
+        <Nev>Kukorica</Nev>
+        <Fajta>DKC 4590</Fajta>
+    </Termeny>
+
+    <!-- Minőségvizsgálatok -->
+    <MinosegVizsgalat Vizsgalat_ID="mv_01" Merlegjegy_ID="mj_01">
+        <Nedvesseg_szazalek>13.5</Nedvesseg_szazalek>
+        <Idegen_anyag_szazalek>1.2</Idegen_anyag_szazalek>
+        <Datum>2026-07-12</Datum>
+        <Laborans_neve>Tóth Anna</Laborans_neve>
+        <Minoseg_osztaly>Malmi</Minoseg_osztaly>
+    </MinosegVizsgalat>
+    <MinosegVizsgalat Vizsgalat_ID="mv_02" Merlegjegy_ID="mj_02">
+        <Nedvesseg_szazalek>15.8</Nedvesseg_szazalek>
+        <Idegen_anyag_szazalek>2.4</Idegen_anyag_szazalek>
+        <Datum>2026-07-15</Datum>
+        <Laborans_neve>Nagy Béla</Laborans_neve>
+        <Minoseg_osztaly>Takarmány</Minoseg_osztaly>
+    </MinosegVizsgalat>
+    <MinosegVizsgalat Vizsgalat_ID="mv_03" Merlegjegy_ID="mj_03">
+        <Nedvesseg_szazalek>13.0</Nedvesseg_szazalek>
+        <Idegen_anyag_szazalek>0.9</Idegen_anyag_szazalek>
+        <Datum>2026-08-02</Datum>
+        <Laborans_neve>Tóth Anna</Laborans_neve>
+        <Minoseg_osztaly>Javító</Minoseg_osztaly>
+    </MinosegVizsgalat>
+
 </ILQ2OX_gabonatelep>
