@@ -22,9 +22,9 @@
     </Merlegjegy>
     <Merlegjegy Merlegjegy_ID="mj_03" Termeny_ID="t_01" Vevo_ID="v_02" Gazda_ID="g_01">
         <J_rendszam>GHI-789</J_rendszam>
-        <Brutto_mazsa>450</Brutto_mazsa>
+        <Brutto_mazsa>360</Brutto_mazsa>
         <Ures_mazsa>160</Ures_mazsa>
-        <Netto_mazsa>290</Netto_mazsa>
+        <Netto_mazsa>200</Netto_mazsa>
         <Irany>Ki</Irany>
         <Datum>2026-08-02</Datum>
     </Merlegjegy>
@@ -100,7 +100,7 @@
     <KeszletMozgas Mozgas_ID="km_03" Raktar_ID="r_01" Merlegjegy_ID="mj_03" Termeny_ID="t_01">
         <Irany>Ki</Irany>
         <Datum>2026-08-02</Datum>
-        <Mennyiseg_mazsa>290</Mennyiseg_mazsa>
+        <Mennyiseg_mazsa>200</Mennyiseg_mazsa>
     </KeszletMozgas>
 
     <!-- Termények -->

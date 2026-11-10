@@ -28,8 +28,8 @@ public class ILQ2OX_DOMRead {
     public static void main(String[] args)
             throws ParserConfigurationException, SAXException, IOException, TransformerException {
 
-        // A beolvasandó XML fájl (a futtatás munkakönyvtára az ILQ2OX_XMLTask mappa)
-        File xmlFile = new File("ILQ2OX_XMLTASK/ILQ2OX_XML.xml");
+        // A beolvasandó XML fájl (az útvonal a repó gyökeréhez képest értendő, onnan futtatjuk)
+        File xmlFile = new File("ILQ2OX_XMLTask/ILQ2OX_XML.xml");
 
         // A gyár (factory) hozza létre a feldolgozót, a beállításokat ezen lehet megadni
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -255,14 +255,16 @@ public class ILQ2OX_DOMRead {
 
         // ---------------- Mentés fájlba ----------------
         // A beolvasott DOM-fát a Transformer segítségével új XML fájlba írjuk
-        saveToFile(doc, "ILQ2OX_XML_out.xml");
+        saveToFile(doc, "ILQ2OX_XMLTask/ILQ2OX_XML_out.xml");
     }
 
-    // Visszaadja az elem adott nevű első gyerekelemének szöveges tartalmát.
+    // Visszaadja az elem adott nevű első gyerekelemének szöveges tartalmát, a széleiről levágott
+    // szóközökkel (az XSD whiteSpace=collapse miatt pl. " 200 " is érvényes érték lehet).
     // Ha nincs ilyen gyerekelem, üres szöveget ad vissza (így nem kapunk NullPointerException-t).
-    private static String getText(Element elem, String tagName) {
+    // Nem private: a DOMQuery és a DOMModify is ezt használja (ugyanabban a csomagban vannak).
+    public static String getText(Element elem, String tagName) {
         Node node = elem.getElementsByTagName(tagName).item(0);
-        return node != null ? node.getTextContent() : "";
+        return node != null ? node.getTextContent().trim() : "";
     }
 
     // Kiírja egy Gazda vagy Vevo elem Elerhetoseg gyerekelemének tartalmát

@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ILQ2OX_DOMQuery",
+            "request": "launch",
+            "mainClass": "ilq2ox.domparse.hu.ILQ2OX_DOMQuery",
+            "projectName": "ILQ2OXWebXML_1f636d1b"
+        },
+        {
+            "type": "java",
             "name": "ILQ2OX_DOMRead",
             "request": "launch",
             "mainClass": "ilq2ox.domparse.hu.ILQ2OX_DOMRead",
@@ -12,8 +19,7 @@
             "type": "java",
             "name": "DOMParse futtatása",
             "request": "launch",
-            "mainClass": "${file}",
-            "cwd": "${workspaceFolder}/ILQ2OX_XMLTask"
+            "mainClass": "${file}"
         }
     ]
 }
