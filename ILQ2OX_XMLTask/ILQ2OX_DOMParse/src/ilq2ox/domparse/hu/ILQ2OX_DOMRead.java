@@ -294,7 +294,8 @@ public class ILQ2OX_DOMRead {
     // Rekurzívan törli a csak szóközt/sortörést tartalmazó szöveges csomópontokat.
     // Ezek az eredeti fájl behúzásából maradtak; ha bent hagynánk őket, az INDENT
     // beállítás mellett a kimenetben üres sorok jelennének meg.
-    private static void removeWhitespaceNodes(Node node) {
+    // Nem private: a DOMModify is ezt használja a konzolos kiírás előtt.
+    public static void removeWhitespaceNodes(Node node) {
         NodeList children = node.getChildNodes();
 
         // Visszafelé haladunk, mert törléskor a lista indexei elcsúsznak

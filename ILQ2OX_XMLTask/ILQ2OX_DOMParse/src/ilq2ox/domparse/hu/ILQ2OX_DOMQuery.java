@@ -55,8 +55,9 @@ public class ILQ2OX_DOMQuery {
         raktaronkentiKeszlet(doc);
     }
 
-    // Keresés az XML-ben egy elemre, amelynek adott attribútuma adott értékű
-    private static Element keresID(Document doc, String tagName, String attrName, String ertek) {
+    // Keresés az XML-ben egy elemre, amelynek adott attribútuma adott értékű.
+    // Nem private: a DOMModify is ezt használja (ugyanabban a csomagban vannak).
+    public static Element keresID(Document doc, String tagName, String attrName, String ertek) {
         NodeList nList = doc.getElementsByTagName(tagName);
 
         for (int i = 0; i < nList.getLength(); i++) {

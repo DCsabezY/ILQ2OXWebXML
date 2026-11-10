@@ -17,6 +17,13 @@
         },
         {
             "type": "java",
+            "name": "ILQ2OX_DOMModify",
+            "request": "launch",
+            "mainClass": "ilq2ox.domparse.hu.ILQ2OX_DOMModify",
+            "projectName": "ILQ2OXWebXML_1f636d1b"
+        },
+        {
+            "type": "java",
             "name": "DOMParse futtatása",
             "request": "launch",
             "mainClass": "${file}"
