@@ -3,21 +3,13 @@ package ilq2ox.domparse.hu;
 // A segédmetódusok a másik két osztályban vannak, statikus importtal hívjuk őket
 import static ilq2ox.domparse.hu.ILQ2OX_DOMQuery.keresID;
 import static ilq2ox.domparse.hu.ILQ2OX_DOMRead.getText;
-import static ilq2ox.domparse.hu.ILQ2OX_DOMRead.removeWhitespaceNodes;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.StringWriter;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -28,7 +20,7 @@ import org.xml.sax.SAXException;
 public class ILQ2OX_DOMModify {
 
     public static void main(String[] args)
-            throws SAXException, IOException, ParserConfigurationException, TransformerException {
+            throws SAXException, IOException, ParserConfigurationException {
 
         // A beolvasandó XML fájl (az útvonal a repó gyökeréhez képest értendő, onnan futtatjuk)
         File xmlFile = new File("ILQ2OX_XMLTask/ILQ2OX_XML.xml");
@@ -61,10 +53,6 @@ public class ILQ2OX_DOMModify {
         // d.) Elem törlése
         System.out.println("\nd.) A vevők faxszámának törlése:");
         faxTorles(doc);
-
-        // A módosított dokumentum kiírása a konzolra
-        System.out.println("\nA módosított dokumentum:");
-        printDocument(doc);
     }
 
     // a.) A mérlegjegy üres tömegének átírása, a nettó tömeg újraszámolása,
@@ -80,15 +68,9 @@ public class ILQ2OX_DOMModify {
 
         // A számoláshoz a szöveges tartalmat egész számmá alakítjuk
         int brutto = Integer.parseInt(getText(merlegjegy, "Brutto_mazsa"));
-        String regiUres = getText(merlegjegy, "Ures_mazsa");
-        String regiNetto = getText(merlegjegy, "Netto_mazsa");
+        int regiUres = Integer.parseInt(getText(merlegjegy, "Ures_mazsa"));
+        int regiNetto = Integer.parseInt(getText(merlegjegy, "Netto_mazsa"));
         int ujNetto = brutto - ujUres;
-
-        // Az XSD szerint a tömeg nem lehet negatív, ilyenkor nem módosítunk
-        if (ujNetto < 0) {
-            System.out.println("Hiba: az üres tömeg (" + ujUres + ") nagyobb a bruttónál (" + brutto + ")");
-            return;
-        }
 
         // A setTextContent() az elem teljes szöveges tartalmát lecseréli az új értékre
         merlegjegy.getElementsByTagName("Ures_mazsa").item(0).setTextContent(String.valueOf(ujUres));
@@ -135,7 +117,8 @@ public class ILQ2OX_DOMModify {
         // a sorozat utolsó eleme, így a sorrend a beszúrás után is érvényes marad.
         elerhetoseg.appendChild(ujElem);
 
-        System.out.println("Gazda: " + getText(gazda, "Nev") + " (" + gazdaId + ")");
+        String nev = getText(gazda, "Nev");
+        System.out.println("Gazda: " + nev + " (" + gazdaId + ")");
         System.out.println("Új e-mail cím: " + email);
         System.out.println("E-mail címek száma: " + elerhetoseg.getElementsByTagName("EmailCim").getLength());
     }
@@ -162,8 +145,10 @@ public class ILQ2OX_DOMModify {
         // A setAttribute() a meglévő attribútum értékét felülírja (ha nem létezne, létrehozná)
         merlegjegy.setAttribute("Vevo_ID", ujVevoId);
 
-        System.out.println("Mérlegjegy: " + merlegjegyId + ", Rendszám: " + getText(merlegjegy, "J_rendszam"));
-        System.out.println("Vevo_ID: " + regiVevoId + " -> " + ujVevoId + " (" + getText(ujVevo, "Nev") + ")");
+        String j_rendszam = getText(merlegjegy, "J_rendszam");
+        String ujVevoNev = getText(ujVevo, "Nev");
+        System.out.println("Mérlegjegy: " + merlegjegyId + ", Rendszám: " + j_rendszam);
+        System.out.println("Vevo_ID: " + regiVevoId + " -> " + ujVevoId + " (" + ujVevoNev + ")");
     }
 
     // d.) A FaxSzam elem törlése minden vevőtől (az XSD-ben minOccurs="0", így a törlés után is érvényes)
@@ -187,36 +172,5 @@ public class ILQ2OX_DOMModify {
                 }
             }
         }
-    }
-
-    // A teljes dokumentum kiírása a konzolra
-    private static void printDocument(Document doc) throws TransformerException {
-
-        // Az eredeti behúzás eltávolítása, hogy a Transformer újra egységesen behúzhassa
-        // (így az újonnan beszúrt EmailCim is a helyes behúzással jelenik meg)
-        removeWhitespaceNodes(doc.getDocumentElement());
-
-        // A Transformer a DOM-fát (forrás) szöveges XML-lé alakítja (eredmény)
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = transformerFactory.newTransformer();
-
-        // Behúzás 4 szóközzel; az XML-deklarációt kézzel írjuk ki, mert a Transformer nem tesz utána sortörést
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-        transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
-        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
-
-        // Először egy StringWriter-be írunk, és azt a println() írja ki: így a konzol saját
-        // kódolását használja, és az ékezetes betűk helyesen jelennek meg
-        StringWriter writer = new StringWriter();
-        writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + System.lineSeparator());
-
-        // A legfelső szintű csomópontokat (megjegyzés + gyökérelem) egyenként írjuk ki,
-        // így külön sorba kerülnek
-        NodeList topLevel = doc.getChildNodes();
-        for (int i = 0; i < topLevel.getLength(); i++) {
-            transformer.transform(new DOMSource(topLevel.item(i)), new StreamResult(writer));
-        }
-
-        System.out.println(writer);
     }
 }
