@@ -35,7 +35,7 @@ public class ILQ2OX_DOMModify {
 
         // A gyár (factory) hozza létre a feldolgozót, a beállításokat ezen lehet megadni
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-
+ 
         // A DocumentBuilder végzi a tényleges elemzést
         DocumentBuilder builder = factory.newDocumentBuilder();
 

@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "XPath_ILQ2OX",
+            "request": "launch",
+            "mainClass": "XPath_ILQ2OX",
+            "projectName": "ILQ2OXWebXML_1f636d1b"
+        },
+        {
+            "type": "java",
             "name": "ILQ2OX_DOMQuery",
             "request": "launch",
             "mainClass": "ilq2ox.domparse.hu.ILQ2OX_DOMQuery",

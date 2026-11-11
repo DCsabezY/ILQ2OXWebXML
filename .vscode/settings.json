@@ -1,6 +1,9 @@
 {
     "xml.downloadExternalResources.enabled": true,
-    "java.project.sourcePaths": ["ILQ2OX_XMLTask/ILQ2OX_DOMParse/src"],
+    "java.project.sourcePaths": [
+        "ILQ2OX_XMLTask/ILQ2OX_DOMParse/src",
+        "ILQ2OX_1111/XPath_ILQ2OX/src"
+    ],
     "java.project.outputPath": "ILQ2OX_XMLTask/ILQ2OX_DOMParse/bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
